@@ -1,0 +1,16 @@
+<h1>Polyanimus</h1>
+
+<div class="row">
+  <h3><%= random_quote[0]["thinker"] %></h3>
+  <p><%= random_quote[0]["thought"] %></p>
+</div>
+
+<form method="POST">
+  <label for="nameBox">Thinker</label>
+  <input type="text" name="name_box" id="nameBox">
+  <br>
+  <label for="quoteBox">Thought</label>
+  <input type="text" name="quote_box" id="quoteBox">
+
+  <button type="submit" id="submit">Contribute</button>
+</form>

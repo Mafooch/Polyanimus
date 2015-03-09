@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- this order is important. normalize, foundation, and lastly your own -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="/javascripts/vendor/modernizr.js"></script>
+    <title>Polyanimus</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <%= yield %>
+
+          <script src="/javascripts/vendor/jquery-2.1.3.min.js"></script>
+          <script src="/javascripts/app.js"></script>
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/vendor/jquery.js"></script>
+    <script src="/javascripts/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
