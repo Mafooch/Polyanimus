@@ -1,22 +1,15 @@
--- DROP TABLE IF EXISTS quotes;
---
--- CREATE TABLE quotes (
---   id serial,
---   thinker varchar(30),
---   thought varchar(10000),
---   PRIMARY KEY (q_id)
--- );
+DROP TABLE IF EXISTS quotes;
 
--- ALTER TABLE quotes
---   ADD COLUMN lookedAt BOOLEAN DEFAULT FALSE;
-
--- UPDATE quotes
--- SET lookedAt = 'true'
--- WHERE id = 1;
+CREATE TABLE quotes (
+  id serial PRIMARY KEY,
+  title varchar(100),
+  thinker varchar(30),
+  thought varchar(10000),
+  lookedAt BOOLEAN DEFAULT FALSE
+);
 
 
-SELECT id, thinker, lookedAt
-FROM quotes;
+
 
 
 -- UPDATE quotes

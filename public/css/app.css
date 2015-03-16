@@ -1,0 +1,26 @@
+#title_header {
+  text-align: center;
+  font-family: Georgia;
+  color: #E8DDCB;
+}
+
+#thinker_header {
+  text-align: center;
+  font-family: Georgia;
+  color: #E8DDCB;
+}
+
+#quote_text {
+  text-align: justify;
+  font-size: .95rem;
+  font-family: "Goudy Serial";
+  color: #FFFEF9;
+}
+
+#quoteBox {
+  height: 50rem;
+}
+
+body {
+  background-image: url("http://i3.minus.com/ibf5oViZSEN5QF.jpg");
+}
